@@ -2,6 +2,11 @@ import java.util.Random;
 
 public class DiceGame {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("What is your name? \n> ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+        
         Random rand = new Random();
 
         System.out.println("Rolling dice...");
